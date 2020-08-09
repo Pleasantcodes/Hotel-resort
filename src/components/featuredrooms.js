@@ -6,7 +6,7 @@ import Title from "./Title";
 export default class FeaturedRooms extends Component {
   static contextType = RoomContext;
   render() {
-    const { loading, featuredrooms: rooms } = this.context;
+    let { loading, featuredRooms: rooms } = this.context;
     rooms = rooms.map((room) => {
       return <Room key={room.id} room={room} />;
     });
