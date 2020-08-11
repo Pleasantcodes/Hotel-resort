@@ -4,10 +4,11 @@ import Banner from "../components/banner";
 import { Link } from "react-router-dom";
 import Services from "../components/services";
 import Featuredrooms from "../components/featuredrooms";
+
 export default function Home() {
   return (
     <React.Fragment>
-      <Hero hero="defaultHero">
+      <Hero>
         <Banner
           title="Epicurean rooms"
           subtitle="deluxe rooms starting at ₦600,000"

@@ -35,7 +35,7 @@ export default class RoomProvider extends Component {
     });
     return tempItems;
   }
-  getRooms = (lit) => {
+  getRoom = (lit) => {
     let tempRooms = [...this.state.rooms];
     const room = tempRooms.find((room) => room.lit === lit);
     return room;
@@ -43,7 +43,7 @@ export default class RoomProvider extends Component {
 
   render() {
     return (
-      <RoomContext.Provider value={{ ...this.state, getRoom: this.getRooms }}>
+      <RoomContext.Provider value={{ ...this.state, getRoom: this.getRoom }}>
         {this.props.children}
       </RoomContext.Provider>
     );
