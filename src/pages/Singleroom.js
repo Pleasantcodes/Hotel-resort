@@ -9,7 +9,7 @@ export default class SingleRoom extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      lit: this.props.match.params.slug,
+      lit: this.props.match.params.lit,
       defaultBcg,
     };
   }
